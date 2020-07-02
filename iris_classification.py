@@ -11,10 +11,6 @@ import mlflow.lightgbm
 
 mpl.use('Agg')
 
-# mlflow.set_tracking_uri("http://0.0.0.0:9001")
-mlflow.set_experiment("test_lightgbm")
-
-
 def parse_args():
     parser = argparse.ArgumentParser(description='LightGBM example')
     parser.add_argument('--learning-rate', type=float, default=0.1,

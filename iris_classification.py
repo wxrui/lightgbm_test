@@ -36,7 +36,7 @@ def main():
     # enable auto logging
     mlflow.lightgbm.autolog()
 
-    with mlflow.start_run():
+    with mlflow.start_run(run_name='iris_lgm'):
 
         # train model
         params = {
